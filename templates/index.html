@@ -1,0 +1,14 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="{% static 'css/basic.min.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'css/dropzone.min.css' %}">
+    <title>Simple Image Upload</title>
+</head>
+<body>
+<form action="/upload/" enctype="multipart/form-data" class="dropzone" id="my-awesome-dropzone"></form>
+<script src="{% static 'js/dropzone.min.js' %}"></script>
+</body>
+</html>
